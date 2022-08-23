@@ -78,10 +78,10 @@ __internal_proxy_sys_no_cache = []
 [dependencies]
 base64 = "0.13"
 http = { git = "https://github.com/raw-http/http" }
-url = { git = "https://github.com/raw-http/rust-url/url" }
+url = { git = "https://github.com/raw-http/rust-url" }
 bytes = "1.0"
 serde = "1.0"
-serde_urlencoded = "0.7.1"
+serde_urlencoded = {git = "https://github.com/raw-http/serde_urlencoded"}
 tower-service = "0.3"
 
 # Optional deps...
@@ -95,7 +95,7 @@ mime_guess = { version = "2.0", default-features = false, optional = true }
 encoding_rs = "0.8"
 futures-core = { version = "0.3.0", default-features = false }
 futures-util = { version = "0.3.0", default-features = false }
-http-body ={ git = "https://github.com/raw-http/http-body/http-body" }
+http-body ={ git = "https://github.com/raw-http/http-body" }
 hyper = { git = "https://github.com/raw-http/hyper", default-features = false, features = ["tcp", "http1", "http2", "client", "runtime"] }
 h2 = { git = "https://github.com/raw-http/h2" }
 once_cell = "1"
